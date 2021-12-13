@@ -23,14 +23,6 @@
 #include <cmath>
 #include <iostream>
 
-double getCosinesA(int firstX, int firstY, int secondX, int secondY) {
-  int vectorX = firstX - secondX;
-  int vectorY = firstY - secondY;
-  double magnitude = sqrt(pow(vectorX, 2) + pow(vectorY, 2));
-  double cosinesA = vectorX / magnitude;
-  return cosinesA;
-}
-
 int main() {
   std::cout << "Введите координаты первой точки (x y), например, 1 2:";
   int firstX, firstY;
